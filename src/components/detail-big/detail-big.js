@@ -9,6 +9,15 @@ class detailBig extends HTMLElement {
 	static get observedAttributes(){
 		return ['title','content','footer','type'];
 	}
+    render(){ 
+		this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
+		
+	}
+
+	connectedCallback(){ // Conectado -> Inicialice ene l DOM el metodo de render
+		this.render();
+        console.log("conectando")
+	}
     getTemplate(){
 		const template = document.createElement('template')
 		template.innerHTML = `
@@ -44,6 +53,9 @@ class detailBig extends HTMLElement {
 		}
 		
 	}
+    disconnectedCallback() {
+        console.log('Custom square element removed from page.');
+      }
 
     getStyles(){ //método para manejar los estilos
         return `
@@ -80,13 +92,6 @@ class detailBig extends HTMLElement {
             </style>
         `
     }
-	render(){ 
-		this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
-		
-	}
-
-	connectedCallback(){ // Conectado -> Inicialice ene l DOM el metodo de render
-		this.render();
-	}
+	
 }
 customElements.define("detail-big", detailBig)
