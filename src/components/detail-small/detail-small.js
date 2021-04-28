@@ -22,7 +22,7 @@ class detailSmall extends HTMLElement {
                 <div class="main__temp">
                     <div class="main__temp--max">
                         ${this.mtemp}<span>°C</span>
-                    </div>
+                    </div>  - 
                     <div class="main__temp--min">
                         ${this.mitemp}<span>°C</span>
                     </div>
