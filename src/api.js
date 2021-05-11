@@ -14,7 +14,7 @@ var f=new Date();
 
    let RenderCity = (city)=>{
        
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2b9d5356c23b0e624f7e214ac8116221&lang=sp&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=2b9d5356c23b0e624f7e214ac8116221&lang=sp&units=metric`)
     .then(response=> response.json()) 
     .then(dataCity=>{ 
         containerMain.innerHTML= `<detail-main ubication="${dataCity.name}" date="${f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear()}" temp="${dataCity.main.temp}" type="${dataCity.weather[0].main}" > </detail-main>`
@@ -76,7 +76,7 @@ function geoFindMe() {
       output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
       historial(longitude, latitude);
       var img = new Image();
-      img.src = "http://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+      img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
   
       output.appendChild(img);
     };
