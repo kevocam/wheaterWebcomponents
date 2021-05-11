@@ -1,19 +1,24 @@
 const path = require('path'); //usa un require que traer la ruta
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports ={
-  experiments: {
+  /* experiments: {
     outputModule: true,
     syncWebAssembly: true,
     topLevelAwait: true,
     asyncWebAssembly: true,
     layers: true,
     lazyCompilation: true,
-  },
-    entry:'./src/index.js', 
+  }, */
+    entry: path.resolve(__dirname, 'src/index.js'),
+    
     output: {
-        path:path.resolve(__dirname, ''),
+        path:path.resolve(__dirname, 'dist'),
         filename:'index.js', 
     },
+    devServer: {
+      contentBase: './dist',
+      hot: true,
+  },
     resolve:{
         extensions:['.js'] 
 
@@ -33,7 +38,7 @@ module.exports ={
     plugins:[
       new HtmlWebpackPlugin({
           inject:true,
-          template: './public/index.html',
+          template: './dist/index.html',
           filename:'./index.html'
       })
   ]
