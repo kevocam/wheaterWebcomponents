@@ -24,7 +24,7 @@ class detailMain extends HTMLElement {
 					</div>
 				</div>
 				<div class="main__img">
-					<img src="../src/img/Shower.png" alt="">
+					<img src="./img/Shower.png" alt="">
 				</div>
 				<div class="main__temp">
 					<h2 class="main__temp--gps">
@@ -116,7 +116,7 @@ class detailMain extends HTMLElement {
 					}
 				/* .main__img::after{
 					position:absolute;
-					background-image: url("../img/Cloud-background.png");
+					background-image: url("./img/Cloud-background.png");
 					background-position: center;
 					background-size: cover;
 					content: "";
