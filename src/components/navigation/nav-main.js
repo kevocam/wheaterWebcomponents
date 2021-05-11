@@ -65,13 +65,7 @@ class navMain extends HTMLElement {
                     align-items: center;
                     padding: 2.2rem;
                     box-sizing: border-box;
-
-
-                }
-               
-
-
-           
+                }           
             </style>
         `
     }

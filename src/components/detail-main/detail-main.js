@@ -6,10 +6,7 @@ class detailMain extends HTMLElement {
 	}
     constructor(){
         super();
-        this.attachShadow({mode:'open'});	
-		
-		
-        
+        this.attachShadow({mode:'open'});	        
     }	
 	
     getTemplate(){
@@ -18,7 +15,7 @@ class detailMain extends HTMLElement {
 			<section class="main">
 				<div class="main__header">
 					<div class="main__header--button">
-						<button>Search for places</button>
+					<!-- <button>Search for places</button>  -->
 					</div>
 					<div class="main__header--btnmenu">
 						<span class="material-icons">
@@ -30,14 +27,15 @@ class detailMain extends HTMLElement {
 					<img src="../src/img/Shower.png" alt="">
 				</div>
 				<div class="main__temp">
-					<p class="main__temp--title"> ${this.temp}<span>°C</span> </p>
-					<p class="main__temp--about">${this.type}</p>
-					<p class="main__temp--date">${this.date}</p>
-					<p class="main__temp--gps">
+					<h2 class="main__temp--gps">
 						<span class="material-icons">
 							location_on
 						</span>${this.ubication} 
-					</p>
+					</h2>
+					<p class="main__temp--title"> ${this.temp}<span>°C</span> </p>
+					<p class="main__temp--about">${this.type}</p>
+					<p class="main__temp--date">${this.date}</p>
+					
 				</div>				
 			</section>
             ${this.getStyles()} 
@@ -133,9 +131,10 @@ class detailMain extends HTMLElement {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+
 				}
 				.main__temp--title{
-					font-size: 14.4rem;
+					font-size: 8.4rem;
  					margin:0; 
 					font-weight: 500;
 				}
@@ -145,7 +144,7 @@ class detailMain extends HTMLElement {
 					
 				}
 				.main__temp--title span{
-					font-size: 4.8rem;
+					font-size: 3.8rem;
 					margin:0;
 					font-weight: 100;
 				}
@@ -163,8 +162,8 @@ class detailMain extends HTMLElement {
 
 				}
 				.main__temp--gps{
-					font-size: 1.8rem;
-					margin:0;
+					font-size: 2.8rem;
+					margin:20px 0;
 					display: flex;
 					color:#88869D ;
 

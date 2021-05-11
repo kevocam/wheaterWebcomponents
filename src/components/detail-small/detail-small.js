@@ -54,7 +54,7 @@ class detailSmall extends HTMLElement {
             <style>
                 .main{
                     width: 100%;
-                    height: 177px;
+                    height: 150px;
                     background:#1E213A;
                     display: flex;
                     flex-direction: column;

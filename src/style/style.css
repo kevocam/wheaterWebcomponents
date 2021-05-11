@@ -24,3 +24,53 @@ html{
     padding:24px;
     color:white
 }
+.container__today{
+    text-align: center;
+    margin:4px 0;
+}
+
+.aside__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #100E1D;    
+
+}
+.aside__button--content{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: space-around; 
+    padding:16px;       
+
+}
+.aside__button--content input{
+    font-size: 1.6rem;
+    padding: 4px;
+    border-radius: 6px;
+    color: #1E213A;
+    font-weight: bold;
+}
+#input:focus{
+    background:#1E213A;
+    color:wheat;
+    border:none;
+}
+#btn{
+    padding:5px;
+    font-size: 1.2rem;
+    border:none;
+}
+    
+#btn:hover{
+    cursor:pointer;
+    background: #1E213A;
+    color:white;
+    padding:5px;
+    font-size: 1.2rem;
+    border: none;
+
+}
