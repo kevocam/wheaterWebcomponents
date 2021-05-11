@@ -17,7 +17,7 @@ class detailSmall extends HTMLElement {
                     ${this.date}
                 </div>
                 <div class="main__img">
-                    <img src="../src/img/Shower.png" alt="">
+                    <img src="./img/Shower.png" alt="">
                 </div>
                 <div class="main__temp">
                     <div class="main__temp--max">

@@ -116,7 +116,7 @@ class detailMain extends HTMLElement {
 					}
 				/* .main__img::after{
 					position:absolute;
-					background-image: url("../src/img/Cloud-background.png");
+					background-image: url("../img/Cloud-background.png");
 					background-position: center;
 					background-size: cover;
 					content: "";
