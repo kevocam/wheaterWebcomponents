@@ -9,12 +9,13 @@ module.exports ={
     layers: true,
     lazyCompilation: true,
   }, */
-    entry: path.resolve(__dirname, 'src/index.js'),
+    entry: './src/index.js',
     
     output: {
         path:path.resolve(__dirname, 'dist'),
         filename:'index.js', 
     },
+    
     devServer: {
       contentBase: './dist',
       hot: true,
